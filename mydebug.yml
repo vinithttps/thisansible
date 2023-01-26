@@ -1,5 +1,5 @@
 ---
-- hosts : 172.31.40.239
+- hosts : 172.31.37.112
   become: yes
   tasks: 
         - name: I want to execute linux command
@@ -8,4 +8,4 @@
 
         - name: I want to display linux output
           debug:
-            msg: "{{myresult}}"  
+            msg: "{{myresult}}"
