@@ -6,4 +6,3 @@
           file:
               path: /home/ubuntu/myfile1
               state: touch
-              
