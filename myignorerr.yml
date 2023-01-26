@@ -13,9 +13,10 @@
               name: wget
               state: present
               tags: "mywgett"
+              ignore-errors: yes
 
         - name: I want to install git
           apt:
               name: git
               state: present
-              tags: "git"
+              tags: "mygit"
