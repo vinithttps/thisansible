@@ -1,0 +1,9 @@
+---
+- hosts : 172.31.37.112
+  become: yes
+  tasks: 
+        - name: I want to insert a file
+          file:
+              path: /home/ubuntu/myfile1
+              state: touch
+              
