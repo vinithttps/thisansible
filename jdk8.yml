@@ -10,6 +10,6 @@
 
         - name: Install jdk8 redhat
           yum:
-              name: java-1.88.0-openjdk
+              name: java-1.8.0-openjdk
               state: present 
           when: ansible_os_family=="RedHat"      
