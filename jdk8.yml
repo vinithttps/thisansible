@@ -9,7 +9,7 @@
           when: ansible_os_family=="Debian"
 
         - name: Install jdk8 redhat
-          apt:
+          yum:
               name: java-1.88.0-openjdk
               state: present 
           when: ansible_os_family=="RedHat"      
