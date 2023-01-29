@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+        - name: Install jdk8
+          apt:
+              name: openjdk-8-jre
+              state: present 
+              
