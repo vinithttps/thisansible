@@ -1,0 +1,15 @@
+---
+- hosts: 172.31.37.112
+  become: yes
+  tasks:
+        - name: I want to install tree
+          apt: 
+              name: tree
+              state: present
+          when: myresult.stdrr==""
+
+        - name: I want to install wget
+          apt: 
+             name: wget
+             state: present
+          when: myresult.stdrr!=""
